@@ -1,5 +1,5 @@
-import ProductsListInline from "@/ui/organisms/ProductsListInline";
-import { Products } from "@/ui/types";
+import { ProductsListInline } from "@/ui/organisms/ProductsListInline";
+import { type Products } from "@/ui/types";
 
 const products: Products = [
 	{
