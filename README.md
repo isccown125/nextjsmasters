@@ -27,12 +27,11 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Project Link: [https://github.com/isccown125/nextjsmasters](https://github.com/isccown125/nextjsmasters)
 
-## Deploy
+## 4. Deploy
 
 The app has been deployed on the vercel platform
 
-Link: [nextjsmasters-jade.vercel.app
-](https://nextjsmasters-jade.vercel.app/)https://nextjsmasters-jade.vercel.app/
+Link: https://nextjsmasters-jade.vercel.app/
 
 
 
