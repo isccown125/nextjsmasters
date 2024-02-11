@@ -1,5 +1,8 @@
 ### Getting Started
 
+## Description
+Simple e-commerce store application for nextjsmasters course.
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
