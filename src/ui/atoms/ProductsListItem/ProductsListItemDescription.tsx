@@ -15,10 +15,12 @@ export const ProductsListItemDescription = ({
 	return (
 		<div className="h-1/3 bg-slate-400 px-4 py-2">
 			<div className="flex justify-between">
-				<div className="font-bold">{name}</div>
-				<div className="font-medium">{formatNumberCurrency(price, "pl-PL", "USD")}</div>
+				<h3 role="heading" className="font-bold">
+					{name}
+				</h3>
+				<p className="font-medium">{formatNumberCurrency(price, "pl-PL", "USD")}</p>
 			</div>
-			<div className="mt-2.5">{description}</div>
+			<p className="mt-2.5">{description}</p>
 		</div>
 	);
 };

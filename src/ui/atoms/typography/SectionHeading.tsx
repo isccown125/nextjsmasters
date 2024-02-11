@@ -6,6 +6,8 @@ interface SectionHeadingProps {
 
 export const SectionHeading = ({ children }: SectionHeadingProps) => {
 	return (
-		<h4 className="my-4 text-center text-4xl font-bold text-amber-300 sm:text-left">{children}</h4>
+		<h4 role="heading" className="my-4 text-center text-4xl font-bold text-amber-300 sm:text-left">
+			{children}
+		</h4>
 	);
 };
