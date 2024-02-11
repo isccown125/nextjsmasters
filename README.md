@@ -8,14 +8,14 @@ Before you begin, ensure you have the following installed:
 
 ### Installation
 
-##1. Clone the repository:
+## 1. Clone the repository:
 ```git clone https://github.com/isccown125/nextjsmasters.git```
 ```cd nextjsmasters```
 
-##2. Install the dependencies:
+## 2. Install the dependencies:
 ```npm i```
 
-##3. Start the development server:
+## 3. Start the development server:
 ```npm run dev```
 Visit http://localhost:3000 in your browser to see the project in action.
 
