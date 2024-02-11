@@ -25,14 +25,14 @@ Visit http://localhost:3000 in your browser to see the project in action.
 License
 Distributed under the MIT License. See LICENSE for more information.
 
-Project Link: https://github.com/isccown125/nextjsmasters
+Project Link: [https://github.com/isccown125/nextjsmasters](https://github.com/isccown125/nextjsmasters)
 
 ## Deploy
 
 The app has been deployed on the vercel platform
 
-Link: nextjsmasters-jade.vercel.app
-
+Link: [nextjsmasters-jade.vercel.app
+](https://nextjsmasters-jade.vercel.app/)https://nextjsmasters-jade.vercel.app/
 
 
 
