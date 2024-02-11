@@ -1,5 +1,5 @@
-import { ProductsListInline } from "@/ui/organisms/ProductsListInline";
 import { type Products } from "@/ui/types";
+import { ProductsListGrid } from "@/ui/organisms/ProductListGrid";
 
 const products: Products = [
 	{
@@ -77,7 +77,7 @@ const products: Products = [
 export default function Home() {
 	return (
 		<>
-			<ProductsListInline products={products} heading={"Polecane produkty"} />
+			<ProductsListGrid products={products} heading={"Wszystkie produkty"} />
 		</>
 	);
 }
