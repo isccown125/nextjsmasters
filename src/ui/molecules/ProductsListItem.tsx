@@ -1,16 +1,28 @@
 import React from "react";
+import { type Route } from "next";
 import { ProductsListItemDescription } from "@/ui/atoms/ProductsListItem/ProductsListItemDescription";
 import { type Product } from "@/ui/types";
 import { ProductsListItemItemImage } from "@/ui/atoms/ProductsListItem/ProductsListItemImage";
+import { ActiveLink } from "@/ui/atoms/ActiveLink/ActiveLink";
 
-type ProductListItemProps = Product;
-export const ProductsListItem = ({ name, description, price, image }: ProductListItemProps) => {
+type ProductListItemProps = {
+	product: Product;
+	href: Route;
+};
+export const ProductsListItem = ({
+	product: { name, description, price, image },
+	href,
+}: ProductListItemProps) => {
 	return (
-		<li className="h-[400px] w-[400px] max-w-72 snap-center grid-cols-1 grid-rows-1 overflow-hidden rounded-2xl shadow-xl">
-			<article className="flex h-full flex-col">
-				<ProductsListItemItemImage {...image} />
-				<ProductsListItemDescription name={name} description={description} price={price} />
-			</article>
+		<li className="overflow-hidden rounded shadow-sm sm:w-full">
+			<ActiveLink href={href} exact={true}>
+				<article>
+					<div className="flex h-full w-full flex-col">
+						<ProductsListItemItemImage {...image} />
+						<ProductsListItemDescription name={name} description={description} price={price} />
+					</div>
+				</article>
+			</ActiveLink>
 		</li>
 	);
 };

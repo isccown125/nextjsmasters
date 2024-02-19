@@ -11,6 +11,9 @@ const config: Config = {
 			gridTemplateColumns: {
 				fit: "repeat(auto-fit, 288px)",
 			},
+			gridTemplateRows: {
+				page_layout: "100px, 1fr 100px",
+			},
 		},
 	},
 	plugins: [],
