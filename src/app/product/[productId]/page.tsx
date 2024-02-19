@@ -34,7 +34,9 @@ const Page = async ({ params: { productId } }: SingleProductPageProps) => {
 				image={product.image}
 				price={product.price}
 			/>
-			<SingleProductDescriptionSection>{product.description}</SingleProductDescriptionSection>
+			<SingleProductDescriptionSection description={product.description}>
+				{product.description}
+			</SingleProductDescriptionSection>
 		</>
 	);
 };

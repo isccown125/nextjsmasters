@@ -5,15 +5,17 @@ import { SingleProductDescriptionTitle } from "@/ui/atoms/SingleProduct/SinglePr
 
 type SingleProductDescriptionSectionProps = {
 	children?: React.ReactNode;
+	description: string;
 };
 
 export function SingleProductDescriptionSection({
 	children,
+	description,
 }: SingleProductDescriptionSectionProps) {
 	return (
 		<Container className="mt-10 h-full">
 			<SingleProductDescriptionTitle>Opis</SingleProductDescriptionTitle>
-			<SingleProductDescription>{children}</SingleProductDescription>
+			<SingleProductDescription description={description}>{children}</SingleProductDescription>
 		</Container>
 	);
 }

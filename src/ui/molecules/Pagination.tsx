@@ -1,4 +1,5 @@
 "use client";
+import { type Route } from "next";
 import React, { useEffect, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { usePathname, useRouter } from "next/navigation";
@@ -63,7 +64,7 @@ export const Pagination = ({
 		const { maxPageForPagination, currentPage: currentPageInState } = paginationState;
 		const nextPage =
 			currentPageInState + 1 > maxPageForPagination ? currentPageInState : currentPageInState + 1;
-		const url = new URL(nextPage.toString(), BASE_URL).toString();
+		const url = new URL(nextPage.toString(), BASE_URL).toString() as Route;
 		router.push(url);
 	};
 
@@ -73,7 +74,7 @@ export const Pagination = ({
 			currentPageInState - 1 < minPageForPagination + 1
 				? currentPageInState
 				: currentPageInState - 1;
-		const url = new URL(prevPage.toString(), BASE_URL).toString();
+		const url = new URL(prevPage.toString(), BASE_URL).toString() as Route;
 		router.push(url);
 	};
 	return (
@@ -85,7 +86,7 @@ export const Pagination = ({
 				<div className="flex flex-row gap-2">
 					{paginationState.pages
 						.map((page, index) => (
-							<ActiveLink key={index} href={"/products/" + page} exact={true}>
+							<ActiveLink key={index} href={("/products/" + page) as Route} exact={true}>
 								<PaginationPageNumber>{page}</PaginationPageNumber>
 							</ActiveLink>
 						))
