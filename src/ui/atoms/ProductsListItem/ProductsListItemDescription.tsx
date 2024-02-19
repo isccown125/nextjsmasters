@@ -13,14 +13,20 @@ export const ProductsListItemDescription = ({
 	price,
 }: ProductsItemDescriptionProps) => {
 	return (
-		<div className="h-1/3 bg-slate-400 px-4 py-2">
-			<div className="flex justify-between">
-				<h3 role="heading" className="font-bold">
-					{name}
-				</h3>
-				<p className="font-medium">{formatNumberCurrency(price, "pl-PL", "USD")}</p>
+		<div className="flex h-32 flex-col justify-between overflow-hidden bg-slate-400 px-4 py-2 text-amber-300 2xl:h-24">
+			<div className="flex grid-cols-2 flex-col sm:grid sm:justify-items-end ">
+				<div className="w-fit">
+					<h3 role="heading" className=" font-bold">
+						{name}
+					</h3>
+				</div>
+				<div>
+					<p className="font-medium">{formatNumberCurrency(price, "pl-PL", "USD")}</p>
+				</div>
 			</div>
-			<p className="mt-2.5">{description}</p>
+			<div>
+				<p className="mt-2.5 overflow-hidden text-ellipsis whitespace-nowrap">{description}</p>
+			</div>
 		</div>
 	);
 };
